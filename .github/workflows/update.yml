@@ -60,7 +60,7 @@ jobs:
           git config --local user.name "GitHub Actions"
           git add .
           git commit -m "data updated"
-          git pull --rebase origin main
+          git pull --strategy=ours origin main
           git push
 
       - name: Session info
